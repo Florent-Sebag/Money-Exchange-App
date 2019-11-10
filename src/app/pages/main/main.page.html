@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>main</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-grid>
+      <ion-row align-items-center style="font-size: 18px">
+        <ion-col style="text-align: right;" size="6">From Currency : </ion-col>
+        <ion-col style="text-align: left;padding: 0!important;" size="3">
+          <ion-select placeholder="EUR" style="padding: 0;">
+            <ion-select-option value="f">Female</ion-select-option>
+            <ion-select-option value="m">Male</ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <app-item-currency rate="1.545" srcCurrency="EUR" destCurrency="USD" destSym="US DOLLARS"></app-item-currency>
+
+</ion-content>
