@@ -1,0 +1,27 @@
+.input-value {
+  border: solid 2px #3880ff;
+  border-radius: 5px;
+}
+
+.center-line {
+  height:20%;
+}
+
+.convert-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.convert-div:before,
+.convert-div:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid #000;
+  margin: auto;
+}
+
+.convert-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
