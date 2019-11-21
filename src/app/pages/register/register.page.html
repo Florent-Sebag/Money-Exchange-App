@@ -1,0 +1,47 @@
+<ion-content class="linear-gradient">
+
+  <ion-grid style="height: 100%">
+    <ion-row>
+      <ion-col size="12">
+        <img class="img-center" height="128" width="128" src="../../../assets/main_img.png">
+      </ion-col>
+      <ion-col size="12">
+        <h1 class="title-login">Inscription</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row style="padding: 15px;"></ion-row>
+
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col size="10">
+        <form #form=ngForm (ngSubmit)="register(form)">
+
+          <ion-item class="rounded" style="margin-bottom: 0.7em;">
+            <ion-input type="text" name="username" placeholder="Nom d'utilisateur" ngModel required>
+            </ion-input>
+          </ion-item>
+
+          <ion-item  class="rounded" style="margin-bottom: 0.7em;">
+            <ion-input type="email" name="email" placeholder="Votre@email.com" ngModel required>
+            </ion-input>
+          </ion-item>
+
+          <ion-item class="rounded" style="margin-bottom: 0.7em;">
+            <ion-input type="password" name="password" placeholder="Mot de passe" ngModel required>
+            </ion-input>
+          </ion-item>
+
+          <ion-item class="rounded" style="margin-bottom: 1em;">
+            <ion-input type="password" name="password2" placeholder="Confirmation de mot de passe" ngModel required>
+            </ion-input>
+          </ion-item>
+
+          <ion-button class="rounded" type="submit" color="success" expand="block" >INSCRIPTION</ion-button>
+
+        </form>
+
+      </ion-col>
+    </ion-row>
+    <br/>
+  </ion-grid>
+</ion-content>

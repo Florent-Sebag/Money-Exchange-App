@@ -15,7 +15,6 @@ import {IonSelect} from '@ionic/angular';
 export class ConverterPage implements OnInit {
   baseCurrency = 'EUR';
   toCurrency = 'USD';
-  // @ViewChild('base', { read: ElementRef }) baseSelect: ElementRef;
   @ViewChild('baseSelect', {static : false}) baseSelect: IonSelect;
   @ViewChild('destSelect', {static : false}) destSelect: IonSelect;
 

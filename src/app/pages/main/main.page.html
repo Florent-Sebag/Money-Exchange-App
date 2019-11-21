@@ -1,13 +1,14 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Devises</ion-title>
-    <ion-button slot="primary" style="margin-right: 10px;" routerLink="/converter" router-direction="forward">Converter</ion-button>
+  <ion-toolbar class="new-background-color">
+    <ion-button slot="start" style="margin-left: 10px;" color="danger" (click)="logout()">Logout</ion-button>
+    <ion-title style="text-align: center;">Hi {{user.displayName}} !</ion-title>
+    <ion-button slot="end" style="margin-right: 10px;" color="success" routerLink="/converter" router-direction="forward">Converter</ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
-  <ion-card>
+  <ion-card class="new-background-color">
     <ion-grid>
       <ion-row align-items-center style="font-size: 18px">
         <ion-col style="text-align: right;" size="6">From Currency : </ion-col>
@@ -27,6 +28,5 @@
                        [rate]="elem.value" [srcCurrency]="baseCurrency" [destCurrency]="elem.key" [destSym]="syms[elem.key]">
     </app-item-currency>
   </ng-container>
-  <!--<app-item-currency [rate]="rates.USD" srcCurrency="EUR" destCurrency="USD" destSym="US DOLLARS"></app-item-currency>-->
 
 </ion-content>

@@ -1,5 +1,5 @@
 .input-value {
-  border: solid 2px #3880ff;
+  border: solid 2px #ffffff;
   border-radius: 5px;
 }
 
@@ -24,4 +24,13 @@
   height: 100px;
   width: 100px;
   border-radius: 50%;
+}
+
+.new-background-color{
+  --background: #0074a6;
+  --color: white;
+}
+
+ion-input::placeholder {
+  --color: #fff;
 }

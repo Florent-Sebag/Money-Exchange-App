@@ -1,0 +1,35 @@
+.linear-gradient {
+  --background: linear-gradient(70deg, #0074a6, #27bdff)!important;
+}
+
+.img-center {
+  display: block;
+  margin: 4em auto 0;
+}
+
+.title-login {
+  text-align: center;
+  color: white;
+  font-family: cursive;
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+.rounded {
+  text-align: center;
+  border-radius: 10px;
+}
+
+.link {
+  text-align: center;
+  color: white;
+  font-size: 1em;
+}
+
+.forget {
+  color: white;
+  font-size: 0.8em;
+  margin-bottom: 1.5em;
+  margin-top: 0.3em;
+  text-align: center;
+}
